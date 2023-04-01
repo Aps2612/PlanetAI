@@ -1,38 +1,123 @@
 .App {
   text-align: center;
+  margin-top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  background-color: #75797d;
+  color: #fff;
+  padding: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.submission-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.submission-card {
+  width: 300px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.submission-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.submission-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.submission-card h3 {
+  margin: 0;
+}
+
+.submission-card p {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.submission-card button {
+  margin-right: 10px;
+}
+
+.submission-detail {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.submission-detail img {
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.submission-detail .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.submission-detail .icons button {
+  margin: 0 10px;
+}
+
+.submission-form {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.submission-form form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.submission-form form label {
+  margin-bottom: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.submission-form form input {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.submission-form form textarea {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.submission-form form button {
+  padding: 10px 20px;
+  background-color: #727679;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submission-form form button:hover {
+  background-color: #5e6064;
+}
+
+@media (max-width: 768px) {
+  .submission-card {
+    width: 100%;
   }
 }

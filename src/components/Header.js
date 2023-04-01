@@ -1,8 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import '../index.css'
 
 function Header() {
   return (
+    <div className = "header">
     <header>
       <nav>
         <ul>
@@ -18,6 +20,7 @@ function Header() {
         </ul>
       </nav>
     </header>
+    </div>
   );
 }
 

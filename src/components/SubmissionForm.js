@@ -1,7 +1,9 @@
 import { useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import { Link, useNavigate } from "react-router-dom";
-import SubmissionData from "./SubmissionData";
+import { submissionData } from "./submissionData";
+
+
 
 const SubmissionForm = () => {
   const [title, setTitle] = useState("");
@@ -16,14 +18,14 @@ const SubmissionForm = () => {
       title: title,
       description: description,
       url: url,
-      createdAt: new Date(),
+      createdAt: '02/12/2002'
     };
-    SubmissionData.push(newSubmission);
+    submissionData.push(newSubmission);
     navigate("/");
   };
 
   return (
-    <div>
+    <div className = "form">
       <h2>Submit Your Hackathon Project</h2>
       <form onSubmit={handleSubmit}>
         <label htmlFor="title">Title:</label>
